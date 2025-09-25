@@ -1,0 +1,359 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl; /* Right-to-left for Arabic */
+    text-align: right; /* Align text to the right */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4; /* A light blue for hover effect */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h1, h2, h3 {
+    color: #333;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#hero h1 {
+    color: #00796b; /* Dark cyan for heading */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#hero img {
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #00bcd4;
+}
+
+/* About Section */
+#about-me blockquote {
+    background-color: #f0f0f0;
+    border-right: 5px solid #00bcd4;
+    margin: 20px 0;
+    padding: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Skills Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: right;
+}
+
+th {
+    background-color: #00bcd4;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Portfolio Section */
+.project-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Clear floats */
+}
+
+.project-item h2 {
+    color: #00796b;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.project-item figure {
+    margin: 0;
+    float: right; /* Align image to the right */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.project-item figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item figcaption {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.project-item ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.project-item ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.project-item ul li a {
+    background-color: #00bcd4;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item ul li a:hover {
+    background-color: #00796b;
+}
+
+/* Contact Form Styles */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+form button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00796b;
+}
+
+/* Google Maps Embed */
+#location iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .project-item figure {
+        float: none;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+
+    .project-item figure img {
+        width: 80%;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+
+/* Navigation Toggle Button for Mobile */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Position on the left for RTL */
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show on small screens */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Below the header */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none; /* Hide by default */
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header nav ul.show {
+        display: flex; /* Show when 'show' class is active */
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
